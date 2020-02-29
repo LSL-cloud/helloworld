@@ -17,6 +17,7 @@ public class CommentController {
     @PostMapping("comment")
     public String insertComment(@RequestBody Comment comment){
         commentService.insertComment(comment);
+        System.out.println("修改了");
         return "success";
     }
 
